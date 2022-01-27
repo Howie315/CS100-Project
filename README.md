@@ -22,7 +22,7 @@
 ## Project Description
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
- > * It is important us because we want to be able to store Dogs information and description so that the consumer could adopt/buy a dog. All of us are dog lovers so we're really into it. 
+ > * <It is important us because we want to be able to store Dogs information and description so that the consumer could adopt/buy a dog. All of us are dog lovers so we're really into it.>
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * [toolname](link) - Short description
  >  * Visual Studios - We will use the IDE to code and create test cases for our program.
