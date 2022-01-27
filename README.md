@@ -22,13 +22,13 @@
 ## Project Description
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
- > It is important us because we want to be able to store Dogs information and description so that the consumer could adopt/buy a dog. All of us are dog lovers so we're really into it. 
+ > * It is important us because we want to be able to store Dogs information and description so that the consumer could adopt/buy a dog. All of us are dog lovers so we're really into it. 
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * [toolname](link) - Short description
- >   Visual Studios - We will use the IDE to code and create test cases for our program.
+ >  * Visual Studios - We will use the IDE to code and create test cases for our program.
  > * What will be the input/output of your project? What are the features that the project provides?
- > We will allow the user to input a new dog object and remove existing dogs as they are being adopted/bought. 
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
+ > * We will allow the user to input a new dog object and remove existing dogs as they are being adopted/bought. 
+ > * This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
  > 
  > You also need to set up an empty project board by choosing the  “Automated kanban with review” option on Github. You should also have a Backlog and In testing columns added.
  > ## Phase II
