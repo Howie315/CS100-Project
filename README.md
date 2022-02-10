@@ -45,7 +45,7 @@
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
- > https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5
+ > * https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with a reader (using Calendly). Your entire team must be present. This meeting will occur on week 8 but NOT during lab time.
