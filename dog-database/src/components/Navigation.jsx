@@ -1,5 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
+
+
 
 function Navigation() {
   return (
@@ -7,7 +10,7 @@ function Navigation() {
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            React Multi-Page Website
+            Dog DataBase
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">
@@ -23,13 +26,13 @@ function Navigation() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
-                  Contact
+                <NavLink className="nav-link" to="/dogList">
+                  Dog Listings
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/blog">
-                  Blog
+                <NavLink className="nav-link" to="/addDog">
+                  Dog Add
                 </NavLink>
               </li>
             </ul>
@@ -39,3 +42,5 @@ function Navigation() {
     </div>
   );
 }
+
+export default Navigation;

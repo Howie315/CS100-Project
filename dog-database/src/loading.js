@@ -5,6 +5,10 @@ import Lottie from "lottie-react";
 import "bootstrap/dist/css/bootstrap.css";
 import * as rubikData from "./rubiks.json";
 import * as doneData from "./done.json";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Home from "./components/Home";
+import About from "./components/About";
 
 const defaultOptions = {
 	loop: true,
@@ -45,9 +49,17 @@ export default class Loading extends React.Component {
         return (
             <div>
             {!this.state.done ? (
+                <FadeIn>
               <ReactLoading type={"bars"} color={"white"} />
+              </FadeIn>
             ) : (
-              <h1>Welcome to Dog DataBase</h1>
+                <Router>
+                <Navigation />
+                <Routes>
+                    <Route exact path='/' exact element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+                </Router>
             )}
           </div>
         );
