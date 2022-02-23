@@ -15,7 +15,7 @@ function Home() {
           <div class="col-lg-5">
             <h1 class="font-weight-light">Home</h1>
             <p>
-              Dog DataBase, is the site to add your dog to our listings.
+              Welcome to Dog DataBase, the site to browse your furry friends.
             </p>
           </div>
         </div>
