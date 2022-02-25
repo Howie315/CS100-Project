@@ -61,13 +61,10 @@ export default class Loading extends React.Component {
                 <Routes>
                     <Route exact path='/' exact element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/DogListings" element={<DogListings />}>
-                    <Route path="/AddDog" element={<AddDog />}>
-                    <Route path="/RemoveDog" element={<RemoveDog />}>
-
-                </Route>
-                </Route> 
-                </Route> 
+                    <Route path="/DogListings" element={<DogListings />} />
+                    <Route path="/AddDog" element={<AddDog />} />
+                   <Route path ="/RemoveDog" element={<RemoveDog />} />
+                 
                 </Routes>
                 </Router>
             )}
