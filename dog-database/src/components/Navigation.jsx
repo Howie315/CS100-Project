@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
 
 
-
 function Navigation() {
   return (
     <div className="navigation">
@@ -26,13 +25,18 @@ function Navigation() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/dogList">
+                <NavLink className="nav-link" to="/DogListings">
                   Dog Listings
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/addDog">
+                <NavLink className="nav-link" to="/AddDog">
                   Dog Add
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/RemoveDog">
+                  Dog Remove
                 </NavLink>
               </li>
             </ul>

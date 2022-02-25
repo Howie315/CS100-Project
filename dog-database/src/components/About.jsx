@@ -15,7 +15,8 @@ function About() {
           <div class="col-lg-5">
             <h1 class="font-weight-light">About</h1>
             <p>
-             
+             Dog DataBase is an online dog center where users can access and and add, remove, or learn about a dog. We are driven by the growing number of dogs 
+             occupying animal shelters and wish to find homes for our canine companions. Here, you can browse and pick from a variety of dogs to adopt. 
             </p>
           </div>
         </div>

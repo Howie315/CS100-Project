@@ -9,6 +9,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import About from "./components/About";
+import DogListings from "./components/DogListings";
+import AddDog from "./components/AddDog";
+import RemoveDog from "./components/RemoveDog";
 
 const defaultOptions = {
 	loop: true,
@@ -58,6 +61,13 @@ export default class Loading extends React.Component {
                 <Routes>
                     <Route exact path='/' exact element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/DogListings" element={<DogListings />}>
+                    <Route path="/AddDog" element={<AddDog />}>
+                    <Route path="/RemoveDog" element={<RemoveDog />}>
+
+                </Route>
+                </Route> 
+                </Route> 
                 </Routes>
                 </Router>
             )}
