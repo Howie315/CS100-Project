@@ -53,6 +53,10 @@
  > * Before the meeting you should perform a sprint plan like you did in Phase II.
  > * You should also update this README file by adding the following:
  >   * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
+ >     * We chose composite pattern because we have navigation that leads to About, Home, Dog listings and Dog add. 
+ >     * It was was necessary because the navigation bar has all the links leading to those pages and inherits the navigation bar in each page.
+ >     * In addtion, it was easier to implement our UI like this because the design was easy to navigate through.
+ >     * 
  >     * Why did you pick this pattern? And what feature did you implement with it?
  >     * How did the design pattern help you write better code?
  >     * For our design pattern, we decided to implement a strategy pattern for our buttons. We did this because we will have multiple buttons in our program. In doing this, we can save space by reducing redundant code. The only difference would be the link to where each button goes to and also the name. Other than that, the buttons should have the same functionality. 
