@@ -11,6 +11,11 @@ function Home() {
               src="http://placehold.it/900x400"
               alt=""
             />
+            <img src = {require("./icon.png")}
+            width = "575"
+            height = "550"/>
+          
+      
           </div>
           <div class="col-lg-5">
             <h1 class="font-weight-light">Home</h1>

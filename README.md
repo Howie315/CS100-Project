@@ -53,9 +53,16 @@
  > * Before the meeting you should perform a sprint plan like you did in Phase II.
  > * You should also update this README file by adding the following:
  >   * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
+ >     * We chose composite pattern
+ >     * It was was necessary because the navigation bar has all the links leading to those pages and inherits the navigation bar in each page.
+ >     * In addtion, it was easier to implement our UI like this because the design was easy to navigate through.
  >     * Why did you pick this pattern? And what feature did you implement with it?
+ >     * We chose composite pattern because we have navigation that leads to About, Home, Dog listings and Dog add. 
  >     * How did the design pattern help you write better code?
+ >     * It was easuer to write code with because all we had to do was make pages for each link and inherit it from navigation bar.
+ >     * For our design pattern, we decided to implement a strategy pattern for our buttons. We did this because we will have multiple buttons in our program. In doing this, we can save space by reducing redundant code. The only difference would be the link to where each button goes to and also the name. Other than that, the buttons should have the same functionality. 
  >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
+ >   * https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5
  >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
 > 
 > During the meeting with your reader you will discuss: 
