@@ -1,8 +1,8 @@
 import React from "react";
 
-function Home() {
+function AddDog() {
   return (
-    <div className="home">
+    <div className="AddDog">
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
@@ -13,9 +13,9 @@ function Home() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">Home</h1>
+            <h1 class="font-weight-light">AddDog</h1>
             <p>
-              Welcome to Dog DataBase, the site to browse your furry friends. 
+             Add your dogs here.
             </p>
           </div>
         </div>
@@ -24,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default AddDog;

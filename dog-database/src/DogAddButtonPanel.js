@@ -5,6 +5,7 @@ function DogPanel(props){
 
     const captions = [
         "Dog Database"
+        
     ];
 
 
