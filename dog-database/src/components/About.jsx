@@ -13,7 +13,7 @@ function About() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">About</h1>
+            <h1 class="font-weight-lighgt">About</h1>
             <p>
              Dog database is a project we constructed for dog lovers everywhere.
              Our goal is make easy to adopt or purchase dogs. We do this with 
