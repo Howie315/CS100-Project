@@ -45,7 +45,7 @@
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
- > * https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5
+ > * https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5&page=0_0#
  > * In our diagram, we have the UI class which is the main class where the user will interact with the program. Below the UI class would be the Dog class, where Dog objects will be made for each dog and be stored into a list. Below that we have the leaves such as addDog, removeDog, and showDog which are part of the Dog class. 
  
  > ## Phase III
