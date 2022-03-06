@@ -13,7 +13,7 @@ function AddDog() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">AddDog</h1>
+            <h1 class="font-weight-normal-bold">AddDog</h1>
             <p>
              Add your dogs here.
             </p>
