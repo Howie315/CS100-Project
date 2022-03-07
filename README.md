@@ -59,8 +59,7 @@
  >     * Why did you pick this pattern? And what feature did you implement with it?
  >     * We chose composite pattern because we have navigation that leads to About, Home, Dog listings and Dog add. 
  >     * How did the design pattern help you write better code?
- >     * It was easuer to write code with because all we had to do was make pages for each link and inherit it from navigation bar.
- >     * For our design pattern, we decided to implement a strategy pattern for our buttons. We did this because we will have multiple buttons in our program. In doing this, we can save space by reducing redundant code. The only difference would be the link to where each button goes to and also the name. Other than that, the buttons should have the same functionality. 
+ >     * It was easuer to write code with because all we had to do was make pages for each link and inherit it from navigation bar. 
  >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
  >   * https://lucid.app/publicSegments/view/8d61ee63-dc74-4de9-9850-db7bf4388a9b/image.png
  >   * https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5
