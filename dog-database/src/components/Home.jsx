@@ -6,7 +6,7 @@ function Home() {
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-11">
-          <h1 class="font-weight-normal-bold">Home</h1>
+          <h1 class="font-weight-normal-bold"> Home</h1>
             <p>
               Welcome to Dog DataBase, the site to browse your furry friends! 
             </p>
