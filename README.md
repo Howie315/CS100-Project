@@ -45,7 +45,7 @@
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
- > * https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5
+ > * https://lucid.app/publicSegments/view/8d61ee63-dc74-4de9-9850-db7bf4388a9b/image.png
  > * In our diagram, we have the UI class which is the main class where the user will interact with the program. Below the UI class would be the Dog class, where Dog objects will be made for each dog and be stored into a list. Below that we have the leaves such as addDog, removeDog, and showDog which are part of the Dog class. 
  
  > ## Phase III
@@ -62,6 +62,7 @@
  >     * It was easuer to write code with because all we had to do was make pages for each link and inherit it from navigation bar.
  >     * For our design pattern, we decided to implement a strategy pattern for our buttons. We did this because we will have multiple buttons in our program. In doing this, we can save space by reducing redundant code. The only difference would be the link to where each button goes to and also the name. Other than that, the buttons should have the same functionality. 
  >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
+ >   * https://lucid.app/publicSegments/view/8d61ee63-dc74-4de9-9850-db7bf4388a9b/image.png
  >   * https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5
  >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
 > 
