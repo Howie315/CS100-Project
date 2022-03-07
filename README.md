@@ -22,7 +22,7 @@
 ## Project Description
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
- > It is important us because we want to be able to store Dogs information and description so that the consumer could adopt/buy a dog. All of us are dog lovers so we're really into it.
+ > * It is important us because we want to be able to store Dogs information and description so that the consumer could adopt/buy a dog. All of us are dog lovers so we're really into it.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * [toolname](link) - Short description
  >  * **Visual Studios - We will use this IDE to code and create test cases for our program.**
@@ -82,10 +82,10 @@
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > First install Node.js here: https://nodejs.org/en/
- > Then git pull the files from the master branch.
- > In terminal, enter the dog database folder with cd ./dog-database/.
- > type "npm start" to run the program.
+ > * First install Node.js here: https://nodejs.org/en/
+ > * Then git pull the files from the master branch.
+ > * In terminal, enter the dog database folder with cd ./dog-database/.
+ > * Type "npm start" in terminal to run the program.
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
