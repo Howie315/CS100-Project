@@ -14,9 +14,7 @@ function DogListings() {
           </div>
           <div class="col-lg-5">
             <h1 class="font-weight-light">DogListings</h1>
-            <p>
-             Here is a list of dogs that are up for adoption.  
-            </p>
+           
           </div>
         </div>
       </div>
