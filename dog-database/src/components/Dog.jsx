@@ -1,28 +1,50 @@
-import React from "react";
+import React, {useState, } from  "react";
+import { RiCloseCircleLine } from 'react-icons/ri';
+import { TiEdit } from 'react-icons/ti';
+import AddDog from "./AddDog";
+import AddDogClass from './AddDogClass'
+
+const Dog = ({dogs, completeDog, removeDog, updateDog}) => {
+  const[edit, setEdit] = useState({
+    id:null,
+    value: ''
+  });
 
 
 
-
-const [toggled, setToggled] = useState(false);
-const toggle = () => {
-  setToggled(!toggled);
-const contextValue = {
-   toggled: toggled,
-   toggle: toggle,
+const submitUpdate = value =>{
+  updateDog(edit.id, value);
+  setEdit({
+    id: null,
+    value: ''
+  });
 };
+
+if(edit.id){
+  return <AddDogClass edit ={edit} onSubmit = {submitUpdate} />;
+
 }
 
-class Dog extends React.Component {
-  constructor(props) {
-    super(props);
-    this.callMe = this.callMe.bind(this);
-  }
+return dogs.map((dog, index) => (
+  <div
+  className={dog.isCompelte ? 'dog-row complete' : 'dog-row'}
+  key ={index}
+  >
+    <div key = {dog.id} onClick={() => completeDog(dog.id)}>
+      {dog.text}
+      </div>
+      <div className = 'icons'>
+        <RiCloseCircleLine
+        onClick={() => removeDog(dog.id)}
+        className = 'delete-icon'
+        />
+        <TiEdit
+        onClick={() => setEdit({ id: dog.id, value: dog.text})}
+        className ='edit-icon'
+        />
+        </div>
+        </div>
+));
+};
 
-
-  // ParentClass function
-  
-
-  render() {
-    return false;
-  }
-}
+export default Dog;
