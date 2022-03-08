@@ -7,11 +7,7 @@ function Navigation() {
   return (
     <div className="navigation">
       <nav className="navbar navbar-expand navbar-dark bg-dark">
-      <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
+      
             <img src = {require("./download.png")}
             //width = "70"
             height = "70"/>
@@ -54,11 +50,7 @@ function Navigation() {
             </ul>
           </div>
         </div>
-        <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
+       
             <img src = {require("./download.png")}
             //width = "70"
             height = "70"/>
