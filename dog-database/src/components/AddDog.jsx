@@ -18,6 +18,7 @@ function AddDog() {
             <p>
              Add your dogs here.
             </p>
+            <AddDogClass/>
           </div>
         </div>
       </div>
