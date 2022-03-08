@@ -14,16 +14,9 @@ function Home() {
             <img src = {require("./icon.png")}
             width = "575"
             height = "550"/>
-            <nav className="navbar navbar-expand navbar-dark">
-             <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
                   <NavLink className="nav-link" to="/DogListings">
-                  <h1 class = "font-weight-normal-bold">| Start Here |</h1>
-                  
+                  <h1 class = "font-weight-normal-bold"> Start Here </h1>
                   </NavLink>
-                </li>
-             </ul>
-            </nav>
           </div>
         </div>
       </div>

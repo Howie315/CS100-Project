@@ -21,7 +21,7 @@ function Navigation() {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/">
-                <h1 class = "font-weight-normal-bold">| Home |</h1>
+                <h1 class = "font-weight-normal-bold"> Home </h1>
                   <span className="sr-only">(current)</span>
                 </NavLink>
                 
@@ -29,28 +29,27 @@ function Navigation() {
               
               <li className="nav-item">
                 <NavLink className="nav-link" to="/about">
-                <h1 class = "font-weight-normal-bold">About |</h1>
+                <h1 class = "font-weight-normal-bold">About </h1>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/DogListings">
-                <h1 class = "font-weight-normal-bold">DogListings |</h1>
+                <h1 class = "font-weight-normal-bold">DogListings </h1>
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/AddDog">
-                <h1 class = "font-weight-normal-bold">Dog Add |</h1>
+                <h1 class = "font-weight-normal-bold">Dog Add </h1>
                 </NavLink> 
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/RemoveDog">
-                <h1 class = "font-weight-normal-bold">Dog Remove |</h1>
+                <h1 class = "font-weight-normal-bold">Dog Remove </h1>
                 </NavLink>
               </li>
             </ul>
           </div>
         </div>
-       
             <img src = {require("./download.png")}
             //width = "70"
             height = "70"/>
