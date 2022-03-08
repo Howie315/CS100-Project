@@ -27,7 +27,7 @@ if(edit.id){
 
 return dogs.map((dog, index) => (
   <div
-  className={dog.isCompelte ? 'dog-row complete' : 'dog-row'}
+  className={dog.isComplete ? 'dog-row complete' : 'dog-row'}
   key ={index}
   >
     <div key = {dog.id} onClick={() => completeDog(dog.id)}>
