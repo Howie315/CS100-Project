@@ -13,6 +13,8 @@ function DogListings() {
           
             <h1 class="font-weight-light">DogListings</h1>
             <DogListingsTiles/>
+
+      
           </div>
         </div>
       </div>

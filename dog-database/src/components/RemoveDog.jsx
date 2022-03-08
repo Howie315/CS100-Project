@@ -13,7 +13,7 @@ function RemoveDog() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">RemoveDog</h1>
+            <h1 class="font-weight-normal-bold">RemoveDog</h1>
             <p>
              This is where you remove a dog from our list. 
             </p>
