@@ -8,6 +8,7 @@ function AddDog() {
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
           </div>
+          </div>
 
           <div class="col-lg-5">
             <h1 class="font-weight-normal-bold">AddDog</h1>
@@ -25,5 +26,6 @@ function AddDog() {
     </div>
   );
 }
+
 
 export default AddDog;
