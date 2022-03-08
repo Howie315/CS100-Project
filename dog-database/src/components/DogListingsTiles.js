@@ -3,9 +3,20 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import axios from "axios";
 import AddDogClass from './AddDogClass'
-import { StyleSheet, Text, View, TextInput} from 'react-native';
+import { FlatList, StyleSheet, Text, View, TextInput} from 'react-native';
 import Dog from './Dog'
 
+const styles = StyleSheet.create({
+    container: {
+     flex: 1,
+     paddingTop: 22
+    },
+    item: {
+      padding: 10,
+      fontSize: 18,
+      height: 44,
+    },
+  });
 
 function DogListingsList(){
     const[dogs, setDogs]  = useState([]);
@@ -50,13 +61,16 @@ return (
     <h1>
         Add Dogs When you're ready
     </h1>
-    <AddDogClass onSubmit ={addDog} />
-    <Dog
-        dogs = {dogs}
-        completeDog = {completeDog}
-        removeDog = {removeDog}
-        updateDog={updateDog}
+    <View style ={styles.container}>
+        <Dog
+            dogs = {dogs}
+            completeDog = {completeDog}
+            removeDog = {removeDog}
+            updateDog={updateDog}
         />
+        </View>
+    <AddDogClass onSubmit ={addDog} />
+   
     </>
 );
 }
