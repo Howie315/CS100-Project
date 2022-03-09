@@ -1,5 +1,6 @@
 import React from "react";
-import {NavLink} from "react-router-dom"
+import {NavLink} from "react-router-dom";
+import styled from "styled-components";
 
 function Home() {
   return (
@@ -14,14 +15,27 @@ function Home() {
             <img src = {require("./icon.png")}
             width = "575"
             height = "550"/>
-                  <NavLink className="nav-link" to="/DogListings">
-                  <h1 class = "font-weight-normal-bold"> Start Here </h1>
-                  </NavLink>
+            <StyleButton>
+            <NavLink className = "nav-link" to="/DogListings"><button>
+              Start Here 
+            </button>
+            </NavLink>
+            </StyleButton>     
           </div>
         </div>
       </div>
     </div>
   );
 }
+const StyleButton = styled.a`
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+`;
+
 
 export default Home;
