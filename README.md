@@ -22,10 +22,11 @@
 ## Project Description
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
- > * **It is important us because we want to be able to store Dogs information and description so that the consumer could adopt/buy a dog. All of us are dog lovers so we're really into it.**
+ > * It is important us because we want to be able to store Dogs information and description so that the consumer could adopt/buy a dog. All of us are dog lovers so we're really into it.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * [toolname](link) - Short description
- >  * **Visual Studios - We will use this IDE to code and create test cases for our program.**
+ >  * **Visual Studios Code - We will use this IDE to code and create test cases for our program.**
+ >  * **Node.js - This is the Javascript to run the native website.**
  > * What will be the input/output of your project? What are the features that the project provides?
  > * **We will allow the user to input a new dog object and remove existing dogs as they are being adopted/bought. We plan on making a GUI in Visual Studios so the user could easily access methods.**
  > * This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
@@ -45,7 +46,7 @@
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
- > * https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5
+ > * https://lucid.app/publicSegments/view/8d61ee63-dc74-4de9-9850-db7bf4388a9b/image.png
  > * In our diagram, we have the UI class which is the main class where the user will interact with the program. Below the UI class would be the Dog class, where Dog objects will be made for each dog and be stored into a list. Below that we have the leaves such as addDog, removeDog, and showDog which are part of the Dog class. 
  
  > ## Phase III
@@ -53,9 +54,16 @@
  > * Before the meeting you should perform a sprint plan like you did in Phase II.
  > * You should also update this README file by adding the following:
  >   * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
+ >     * We chose composite pattern
+ >     * It was was necessary because the navigation bar has all the links leading to those pages and inherits the navigation bar in each page.
+ >     * In addtion, it was easier to implement our UI like this because the design was easy to navigate through.
  >     * Why did you pick this pattern? And what feature did you implement with it?
+ >     * We chose composite pattern because we have navigation that leads to About, Home, Dog listings and Dog add. 
  >     * How did the design pattern help you write better code?
+ >     * It was easier to write code with because all we had to do was make pages for each link and inherit it from navigation bar. 
  >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
+ >   * https://lucid.app/publicSegments/view/8d61ee63-dc74-4de9-9850-db7bf4388a9b/image.png
+ >   * https://lucid.app/lucidchart/0933c191-85aa-4413-bd59-5dcdee72e922/edit?invitationId=inv_7088c6c1-5dc8-4ed8-8441-332b787605e5
  >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
 > 
 > During the meeting with your reader you will discuss: 
@@ -75,7 +83,10 @@
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+ > * First install Node.js here: https://nodejs.org/en/
+ > * Then git pull the files from the master branch.
+ > * In terminal, enter the dog database folder with cd ./dog-database/.
+ > * Type "npm start" in terminal to run the program.
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
