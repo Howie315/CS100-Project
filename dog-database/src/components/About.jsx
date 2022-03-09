@@ -7,8 +7,8 @@ function About() {
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
 <<<<<<< HEAD
- 
-          <img src = {require("./dogadopt.png")}
+         
+            <img src = {require("./dogadopt.png")}
 =======
          
             <img src = {require("./dogadopt.png")}
