@@ -23,7 +23,6 @@ function About() {
             <p style = {{ color: "purple" }}> 
              Dog DataBase is an online dog center where users can access and and add, remove, or learn about a dog. We are driven by the growing number of dogs 
              occupying animal shelters and wish to find homes for our canine companions. Here, you can browse and pick from a variety of dogs to adopt. 
->>>>>>> ahoan055/Home-Page
             </p>
           </div>
         </div>
