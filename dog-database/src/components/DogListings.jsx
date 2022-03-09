@@ -1,7 +1,12 @@
 import React from "react";
+import background from "./dogbone.png";
 
 function DogListings() {
   return (
+    <div style= {{
+      width: 1920,
+      height: 849,
+      backgroundImage: `url(${background})` }}>
     <div className="DogListings">
       <div class="container">
         <div class="row align-items-center my-0">
@@ -21,6 +26,7 @@ function DogListings() {
         </div>
       </div>
     </div>
+  </div>
   );
 }
 
