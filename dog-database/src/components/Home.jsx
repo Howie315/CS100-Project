@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom"
 
 function Home() {
   return (
@@ -10,16 +11,12 @@ function Home() {
             <p>
               Welcome to Dog DataBase, the site to browse your furry friends! 
             </p>
-            <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
             <img src = {require("./icon.png")}
             width = "575"
             height = "550"/>
-          
-      
+                  <NavLink className="nav-link" to="/DogListings">
+                  <h1 class = "font-weight-normal-bold"> Start Here </h1>
+                  </NavLink>
           </div>
         </div>
       </div>
