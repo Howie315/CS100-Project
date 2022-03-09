@@ -1,13 +1,12 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import styled from "styled-components";
-import background from "./dogbone.png";
-
+import background from "./test.png";
 
 function Home() {
   return (
   <div style= {{
-    width: 1920,
+    //width: 1920,
     height: 849,
     backgroundImage: `url(${background})` }}>
     <div className="home">
