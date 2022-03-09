@@ -8,8 +8,14 @@ function AddDog() {
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
+          </div>
+          </div>
+
+        
+
           <div class="col-lg-12">
             <h1 class="font-weight-light">AddDog</h1>
+
             <p>
              Add your dogs here.
             </p>
