@@ -14,9 +14,9 @@ function Home() {
         <div class="row align-items-center my-5">
           <div class="col-lg-11">
           <h1 class="font-weight-normal-bold"
-          style = {{ color: "white" }}
+          style = {{ color: "orange" }}
           > Home</h1>
-            <p style = {{ color: "white" }}>
+            <p style = {{ color: "orange" }}>
               Welcome to Dog DataBase, the site to browse your furry friends! 
             </p>
             <img src = {require("./icon.png")}
