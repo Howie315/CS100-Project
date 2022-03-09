@@ -28,8 +28,7 @@ function Home() {
               Start Here 
             </button>
             </NavLink>
-            </StyleButton>     
-          
+            </StyleButton>            
           </div>
         </div>
       </div>
