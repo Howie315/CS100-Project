@@ -5,11 +5,11 @@ function About() {
   return (
     <div style= {{
       width: 1920,
-      height: 800,
+      height: 849,
       backgroundImage: `url(${background})` }}>
     <div className="about">
       <div class="container">
-        <div class="row align-items-center my-5">
+        <div class="row align-items-center my-0">
           <div class="col-lg-7">
          
             <img src = {require("./dogadopt.png")}

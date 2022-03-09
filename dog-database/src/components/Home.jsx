@@ -7,11 +7,11 @@ function Home() {
   return (
   <div style= {{
     width: 1920,
-    height: 800,
+    height: 849,
     backgroundImage: `url(${background})` }}>
     <div className="home">
       <div class="container">
-        <div class="row align-items-center my-5">
+        <div class="row align-items-center my-0">
           <div class="col-lg-11">
           <h1 class="font-weight-normal-bold"
           style = {{ color: "orange" }}

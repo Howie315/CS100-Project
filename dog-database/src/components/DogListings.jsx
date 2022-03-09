@@ -4,7 +4,7 @@ function DogListings() {
   return (
     <div className="DogListings">
       <div class="container">
-        <div class="row align-items-center my-5">
+        <div class="row align-items-center my-0">
           <div class="col-lg-7">
       
           </div>
