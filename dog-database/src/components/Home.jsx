@@ -16,7 +16,7 @@ function Home() {
             width = "575"
             height = "550"/>
             <StyleButton>
-            <NavLink className = "nav-link" to="/DogListings"><button>
+            <NavLink to="/DogListings"><button>
               Start Here 
             </button>
             </NavLink>
@@ -28,13 +28,35 @@ function Home() {
   );
 }
 const StyleButton = styled.a`
-  background-color: black;
-  color: white;
-  font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
+display:block;
+padding-left:0%;
+button {
+    position: relative;
+    //display:block;
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #383736;
+    border: 2px #383736 solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: white;
+    color: red;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+}
+
 `;
 
 
