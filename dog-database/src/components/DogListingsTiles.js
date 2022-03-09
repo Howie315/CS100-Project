@@ -22,10 +22,23 @@ function DogListingsList(){
     const[dogs, setDogs]  = useState([]);
 
     const addDog = dog =>{
-        if(!dog.text || /^\s*$/.test(dog.text)){
+        if(!dog.description || /^\s*$/.test(dog.description)){
             return;
         }
-    
+
+        if(!dog.theName || /^\s*$/.test(dog.theName)){
+            return;
+        }
+        if(!dog.age || /^\s*$/.test(dog.age)){
+            return;
+        }
+        if(!dog.breed || /^\s*$/.test(dog.breed)){
+            return;
+        }
+        if(!dog.gender || /^\s*$/.test(dog.gender)){
+            return;
+        }
+
 
     const newDogs = [dog, ...dogs];
 
@@ -33,11 +46,28 @@ function DogListingsList(){
     console.log(...dogs);
 };
 
-const updateDog = (dogId, newValue) => {
-    if(!newValue.text || /^\s*$/.test(newValue.text)){
+const updateDog = (dogName, dogAge, dogGender, dogBreed, dogId, newDesc) => {
+    if(!newDesc.description || /^\s*$/.test(newDesc.description)){
         return;
     }
-    setDogs(prev => prev.map(item=> (item.id === dogId ? newValue : item)));
+    if(!dogName.theName || /^\s*$/.test(dogName.theName)){
+        return;
+    }
+    if(!dogAge.age|| /^\s*$/.test(dogAge.age)){
+        return;
+    }
+    if(!dogGender || /^\s*$/.test(dogGender.gender)){
+        return;
+    }
+    if(!dogBreed || /^\s*$/.test(dogBreed.breed)){
+        return;
+    }
+  
+    setDogs(prev => prev.map(item=> (item.id === dogId ? newDesc : item)));
+    setDogs(prev => prev.map(item=> (item.id === dogId ? dogName : item)));
+    setDogs(prev => prev.map(item=> (item.id === dogId ? dogAge : item)));
+    setDogs(prev => prev.map(item=> (item.id === dogId ? dogGender : item)));
+    setDogs(prev => prev.map(item=> (item.id === dogId ? dogBreed : item)));
 };
 
 const removeDog = id =>{
@@ -61,14 +91,13 @@ return (
     <h1>
         Add Dogs When you're ready
     </h1>
-    <View style ={styles.container}>
         <Dog
             dogs = {dogs}
             completeDog = {completeDog}
             removeDog = {removeDog}
             updateDog={updateDog}
         />
-        </View>
+     
     <AddDogClass onSubmit ={addDog} />
    
     </>

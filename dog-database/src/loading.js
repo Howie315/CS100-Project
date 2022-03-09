@@ -12,6 +12,8 @@ import About from "./components/About";
 import DogListings from "./components/DogListings";
 import AddDog from "./components/AddDog";
 import RemoveDog from "./components/RemoveDog";
+import DogPost from './components/DogPost';
+import Post from './components/Post';
 
 const defaultOptions = {
 	loop: true,
@@ -61,7 +63,7 @@ export default class Loading extends React.Component {
                 <Routes>
                     <Route exact path='/' element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/DogListings" element={<DogListings />} />
+                    <Route path="/DogListings" element={<DogListings />}/>
                     <Route path="/AddDog" element={<AddDog />} />
                    <Route path ="/RemoveDog" element={<RemoveDog />} />
                  
