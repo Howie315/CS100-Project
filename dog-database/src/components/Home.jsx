@@ -26,20 +26,12 @@ function Home() {
             <img src = {require("./icon.png")}
             width = "575"
             height = "550"/>
-<<<<<<< HEAD
             <StyleButton>
             <NavLink to="/DogListings"><button>
               Start Here 
             </button>
             </NavLink>
             </StyleButton>     
-=======
-              <NavLink className="nav-link" to="/DogListings">
-              <h1 Button = "font-weight-normal-bold"
-              style = {{ color: "white" }}
-              > Start Here </h1>
-              </NavLink>
->>>>>>> ahoan055/Home-Page
           </div>
         </div>
       </div>
