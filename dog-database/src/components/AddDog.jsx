@@ -1,5 +1,6 @@
 import React from "react";
 import AddDogClass from "./AddDogClass";
+import DogPost from "./DogPost";
 
 function AddDog() {
   return (
@@ -10,8 +11,7 @@ function AddDog() {
           </div>
           </div>
 
-          <div class="col-lg-5">
-            <h1 class="font-weight-normal-bold">AddDog</h1>
+        
 
           <div class="col-lg-12">
             <h1 class="font-weight-light">AddDog</h1>
@@ -19,11 +19,11 @@ function AddDog() {
             <p>
              Add your dogs here.
             </p>
-            <AddDogClass/>
+            <DogPost/>
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }
 

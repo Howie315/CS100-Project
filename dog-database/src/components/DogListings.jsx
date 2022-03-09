@@ -1,5 +1,8 @@
 import React from "react";
 import DogListingsTiles from "./DogListingsTiles";
+import DogPost from "./DogPost";
+import Post from "./Post";
+import PostTile from "./PostTile";
 
 function DogListings() {
   return (
@@ -12,9 +15,7 @@ function DogListings() {
           <div class="col-lg-12">
           
             <h1 class="font-weight-light">DogListings</h1>
-            <DogListingsTiles/>
-
-      
+        <DogPost/>
           </div>
         </div>
       </div>
