@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import instance from "../axios-conn";
 
-const baseURL = "https://jsonplaceholder.typicode.com/posts";
-
 class PostTile extends Component {
   handleRemove = (id) => {
+    id.preventdefault();
     instance
       .delete(`posts/${id}.json`)
       .then((res) => {
@@ -26,7 +25,8 @@ class PostTile extends Component {
         <p>{this.props.age}</p>
         <p>{this.props.breed}</p>
         <p>{this.props.gender}</p>
-        <div class="col-lg-5"></div>
+
+        <div class="col-lg-7">{this.props.file}</div>
 
         <form onSubmit={this.handleRemove}>
           <button className="arrow" type="submit">

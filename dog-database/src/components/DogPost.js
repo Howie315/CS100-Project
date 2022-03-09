@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import axios from "axios";
+import axios, { post } from "axios";
 import PostTile from "./PostTile";
 import styled from "styled-components";
 import Post from "./Post";
 import instance from "../axios-conn";
-
-const baseURL = "https://jsonplaceholder.typicode.com/posts";
+import { storage, app } from "../firebase";
+const db = app.firestore();
 
 class DogPost extends Component {
   state = {
@@ -15,6 +15,7 @@ class DogPost extends Component {
     gender: null,
     breed: null,
     description: null,
+    file: null,
     dogTagList: [],
   };
 
@@ -34,6 +35,29 @@ class DogPost extends Component {
       })
       .catch((err) => console.log(err));
   }
+  onFormSubmit(event) {
+    event.preventDefault();
+    this.fileUpload(this.state.file).then((response) => {
+      console.log(response.data);
+    });
+  }
+
+  onChange(event) {
+    this.setState({ file: event.target.files[0] });
+  }
+  fileUpload(file) {
+    const formData = new FormData();
+    formData.append("file", file);
+    const config = {
+      headers: {
+        "content-type": "multipart/form-data",
+      },
+    };
+    return post(
+      "https://console.firebase.google.com/project/dog-database-d87bb/storage/dog-database-d87bb.appspot.com/files",
+      config
+    );
+  }
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
@@ -49,6 +73,7 @@ class DogPost extends Component {
       breed: this.state.breed,
       description: this.state.description,
       id: this.state.id,
+      file: this.state.file,
     };
     console.log(data);
 
@@ -65,6 +90,11 @@ class DogPost extends Component {
     return (
       <div>
         <StyledCreatePost>
+          {/* <form onSubmit={this.onFormSubmit}>
+            <label>Image Upload</label>
+            <input type="file" onChange={this.onChange} />
+            <button type="submit">Upload</button>
+          </form> */}
           <form
             className="ui-form"
             autoComplete="off"
@@ -123,6 +153,7 @@ class DogPost extends Component {
                 gender={dog.gender}
                 breed={dog.breed}
                 description={dog.description}
+                file={dog.file}
               />
             ))}
         </StyledPost>
