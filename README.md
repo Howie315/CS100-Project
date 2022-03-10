@@ -96,6 +96,7 @@
  > * npm install react-toastify
  > * npm install react-promise-tracker
  > * npm install expo-image-picker
+ > * npm install react-test-renderer
  > * Type "npm start" in terminal to run the program.
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
