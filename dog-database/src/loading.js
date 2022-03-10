@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactLoading from "react-loading";
 import FadeIn from 'react-fade-in';
-import Lottie from "lottie-react";
+
 import "bootstrap/dist/css/bootstrap.css";
 import * as rubikData from "./rubiks.json";
 import * as doneData from "./done.json";
@@ -12,8 +12,7 @@ import About from "./components/About";
 import DogListings from "./components/DogListings";
 import AddDog from "./components/AddDog";
 import RemoveDog from "./components/RemoveDog";
-import DogPost from './components/DogPost';
-import Post from './components/Post';
+
 
 const defaultOptions = {
 	loop: true,

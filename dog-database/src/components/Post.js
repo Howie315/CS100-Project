@@ -1,7 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
-import * as ImagePicker from "expo-image-picker";
 import instance from "../axios-conn";
 import { storage } from "../firebase";
 
@@ -42,7 +41,7 @@ const Post = ({ match }) => {
   };
 
   console.log("image: ", image);
-  
+
   useEffect(() => {
     instance
       .get(`posts/${match.params}.json/`)

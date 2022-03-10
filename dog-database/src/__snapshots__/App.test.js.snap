@@ -1,0 +1,405 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<a
+  className="sc-bdvvtL bgTaay"
+>
+  <h1 />
+  <div
+    class="container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-md-5 img img-3 d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="img-with-text"
+        >
+          <img
+            height="500"
+            src="dogbone.png"
+            width="500"
+          />
+          <font
+            size="6"
+          >
+            <p />
+            <p />
+            <p />
+          </font>
+        </div>
+      </div>
+      <div
+        class="col-md-7 wrap-about pl-md-5 "
+      >
+        <div
+          class="heading-section"
+        >
+          <h2
+            class="mb-4"
+          >
+            Dog
+          </h2>
+        </div>
+        <font
+          size="6"
+        >
+          <p />
+        </font>
+      </div>
+    </div>
+  </div>
+  <div
+    class="col-lg-7"
+  />
+  <form
+    onSubmit={[Function]}
+  >
+    <button
+      className="arrow"
+      type="submit"
+    >
+      DELETE
+    </button>
+  </form>
+</a>
+`;
+
+exports[`renders correctly 2`] = `
+<a
+  className="sc-bdvvtL bgTaay"
+>
+  <h1 />
+  <div
+    class="container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-md-5 img img-3 d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="img-with-text"
+        >
+          <img
+            height="500"
+            src="dogbone.png"
+            width="500"
+          />
+          <font
+            size="6"
+          >
+            <p />
+            <p />
+            <p />
+          </font>
+        </div>
+      </div>
+      <div
+        class="col-md-7 wrap-about pl-md-5 "
+      >
+        <div
+          class="heading-section"
+        >
+          <h2
+            class="mb-4"
+          >
+            Dog
+          </h2>
+        </div>
+        <font
+          size="6"
+        >
+          <p />
+        </font>
+      </div>
+    </div>
+  </div>
+  <div
+    class="col-lg-7"
+  />
+  <form
+    onSubmit={[Function]}
+  >
+    <button
+      className="arrow"
+      type="submit"
+    >
+      DELETE
+    </button>
+  </form>
+</a>
+`;
+
+exports[`renders correctly 3`] = `
+<div>
+  <a
+    className="sc-dkPtRN dzyVLj"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <label>
+        Image Upload
+      </label>
+      <br />
+      <input
+        onChange={[Function]}
+        type="file"
+      />
+      <button
+        className="arrow"
+        onclick={[Function]}
+        type="submit"
+      >
+        Upload
+      </button>
+      <br />
+    </form>
+    <form
+      autoComplete="off"
+      className="ui-form"
+      onSubmit={[Function]}
+    >
+      <label>
+        Name
+      </label>
+      <input
+        autofocus={true}
+        name="theName"
+        onChange={[Function]}
+        placeholder="name.."
+        type="text"
+      />
+      <label>
+        Description
+      </label>
+      <input
+        name="description"
+        onChange={[Function]}
+        placeholder="contents.."
+        type="text"
+      />
+      <label>
+        Age
+      </label>
+      <input
+        name="age"
+        onChange={[Function]}
+        placeholder="age in years.."
+        type="text"
+      />
+      <label>
+        Gender
+      </label>
+      <input
+        name="gender"
+        onChange={[Function]}
+        placeholder="gender.."
+        type="text"
+      />
+      <label>
+        Breed
+      </label>
+      <input
+        name="breed"
+        onChange={[Function]}
+        placeholder="breed.."
+        type="text"
+      />
+      <button
+        className="arrow"
+        type="submit"
+      >
+        SUBMIT
+      </button>
+    </form>
+  </a>
+  <a
+    className="sc-hKwDye cSgGvt"
+  />
+</div>
+`;
+
+exports[`renders correctly across screens 1`] = `
+<div>
+  <a
+    className="sc-dkPtRN dzyVLj"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <label>
+        Image Upload
+      </label>
+      <br />
+      <input
+        onChange={[Function]}
+        type="file"
+      />
+      <button
+        className="arrow"
+        onclick={[Function]}
+        type="submit"
+      >
+        Upload
+      </button>
+      <br />
+    </form>
+    <form
+      autoComplete="off"
+      className="ui-form"
+      onSubmit={[Function]}
+    >
+      <label>
+        Name
+      </label>
+      <input
+        autofocus={true}
+        name="theName"
+        onChange={[Function]}
+        placeholder="name.."
+        type="text"
+      />
+      <label>
+        Description
+      </label>
+      <input
+        name="description"
+        onChange={[Function]}
+        placeholder="contents.."
+        type="text"
+      />
+      <label>
+        Age
+      </label>
+      <input
+        name="age"
+        onChange={[Function]}
+        placeholder="age in years.."
+        type="text"
+      />
+      <label>
+        Gender
+      </label>
+      <input
+        name="gender"
+        onChange={[Function]}
+        placeholder="gender.."
+        type="text"
+      />
+      <label>
+        Breed
+      </label>
+      <input
+        name="breed"
+        onChange={[Function]}
+        placeholder="breed.."
+        type="text"
+      />
+      <button
+        className="arrow"
+        type="submit"
+      >
+        SUBMIT
+      </button>
+    </form>
+  </a>
+  <a
+    className="sc-hKwDye cSgGvt"
+  />
+</div>
+`;
+
+exports[`renders correctly across screens 2`] = `
+<div>
+  <a
+    className="sc-dkPtRN dzyVLj"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <label>
+        Image Upload
+      </label>
+      <br />
+      <input
+        onChange={[Function]}
+        type="file"
+      />
+      <button
+        className="arrow"
+        onclick={[Function]}
+        type="submit"
+      >
+        Upload
+      </button>
+      <br />
+    </form>
+    <form
+      autoComplete="off"
+      className="ui-form"
+      onSubmit={[Function]}
+    >
+      <label>
+        Name
+      </label>
+      <input
+        autofocus={true}
+        name="theName"
+        onChange={[Function]}
+        placeholder="name.."
+        type="text"
+      />
+      <label>
+        Description
+      </label>
+      <input
+        name="description"
+        onChange={[Function]}
+        placeholder="contents.."
+        type="text"
+      />
+      <label>
+        Age
+      </label>
+      <input
+        name="age"
+        onChange={[Function]}
+        placeholder="age in years.."
+        type="text"
+      />
+      <label>
+        Gender
+      </label>
+      <input
+        name="gender"
+        onChange={[Function]}
+        placeholder="gender.."
+        type="text"
+      />
+      <label>
+        Breed
+      </label>
+      <input
+        name="breed"
+        onChange={[Function]}
+        placeholder="breed.."
+        type="text"
+      />
+      <button
+        className="arrow"
+        type="submit"
+      >
+        SUBMIT
+      </button>
+    </form>
+  </a>
+  <a
+    className="sc-hKwDye cSgGvt"
+  />
+</div>
+`;
