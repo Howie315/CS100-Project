@@ -24,7 +24,7 @@ class PostTile extends Component {
           <div class="row">
             <div class="col-md-5 img img-3 d-flex justify-content-center align-items-center">
               <div class="img-with-text">
-                <img src={this.props.file} width="500" height="500" />
+                <img src={require("./dogbone.png")} width="500" height="500" />
                 <font size="6">
                   <p>{this.props.breed}</p>
                   <p>{this.props.gender}</p>

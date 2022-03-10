@@ -7,20 +7,35 @@ import instance from "../axios-conn";
 import { storage, app } from "../firebase";
 import { trackPromise } from "react-promise-tracker";
 import { toast } from "react-toastify";
-import * as ImagePicker from "expo-image-picker";
 
 class DogPost extends Component {
-  state = {
-    id: null,
-    theName: null,
-    age: null,
-    gender: null,
-    breed: null,
-    description: null,
-    file: null,
-    dogTagList: [],
-  };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      id: null,
+      theName: null,
+      age: null,
+      gender: null,
+      breed: null,
+      description: null,
+      image: null,
+      url: "",
+      progress: 0,
+      dogTagList: [],
+    };
+    this.onFormSubmit = this.onFormSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleUpload = this.handleUpload.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this);
+    this.handleChange2 = this.handleChange2.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  onFormSubmit(e) {
+    e.preventDefault(); // Stop form submit
+    this.fileUpload(this.state.image).then((response) => {
+      console.log(response.data);
+    });
+  }
   componentDidMount() {
     trackPromise(
       instance.get("/posts.json").then((res) => {
@@ -39,26 +54,41 @@ class DogPost extends Component {
     //.catch((err) => console.log(err));
   }
 
-  onFormSubmit(event) {
-    event.preventDefault();
-    this.fileUpload(this.state.file).then((response) => {
-      console.log(response.data);
-    });
-  }
-
-  onChange(event) {
-    this.setState({ file: event.target.files[0] });
-  }
-  fileUpload(file) {
-    const formData = new FormData();
-    formData.append("file", file);
-    const config = {
-      headers: {
-        "content-type": "multipart/form-data",
+  handleChange2 = (e) => {
+    if (e.target.files[0]) {
+      const image = e.target.files[0];
+      this.setState(() => ({ image }));
+    }
+  };
+  handleUpload = () => {
+    const { image } = this.state;
+    const uploadTask = storage.ref(`images/${image.name}`).put(image);
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {
+        // progrss function ....
+        const progress = Math.round(
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        );
+        this.setState({ progress });
       },
-    };
-    return post("gs://dog-database-d87bb.appspot.com", formData, config);
-  }
+      (error) => {
+        // error function ....
+        console.log(error);
+      },
+      () => {
+        // complete function ....
+        storage()
+          .ref("images")
+          .child(image.name)
+          .getDownloadURL()
+          .then((url) => {
+            console.log(url);
+            this.setState({ url });
+          });
+      }
+    );
+  };
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
@@ -73,8 +103,10 @@ class DogPost extends Component {
       gender: this.state.gender,
       breed: this.state.breed,
       description: this.state.description,
-      file: this.state.file,
+      image: this.state.image,
       id: this.state.id,
+      url: this.state.url,
+      progress: this.state.progress,
     };
     console.log(data);
 
@@ -88,17 +120,20 @@ class DogPost extends Component {
   };
 
   render() {
-   
     return (
       <div>
         <StyledCreatePost>
-          <form onSubmit={this.onFormSubmit}>
+          <form onSubmit={this.handleUpload}>
             <label>Image Upload</label>
-            <input type="file" onChange={this.onChange} />
-            <button className="arrow" type="submit">
-              upload
+            <br />
+
+            <input type="file" onChange={this.handleChange2} />
+            <button className="arrow" type="submit" onclick={this.handleUpload}>
+              Upload
             </button>
+            <br />
           </form>
+
           <form
             className="ui-form"
             autoComplete="off"
@@ -157,7 +192,9 @@ class DogPost extends Component {
                 gender={dog.gender}
                 breed={dog.breed}
                 description={dog.description}
-                file={dog.file}
+                image={dog.image}
+                url={dog.url}
+                progress={dog.progress}
               />
             ))}
         </StyledPost>

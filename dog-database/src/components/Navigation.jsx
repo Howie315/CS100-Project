@@ -37,11 +37,7 @@ function Navigation() {
                 <h1 class = "font-weight-normal-bold">DogListings |</h1>
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/AddDog">
-                <h1 class = "font-weight-normal-bold">Dog Add |</h1>
-                </NavLink> 
-              </li>
+            
               
             </ul>
           </div>
