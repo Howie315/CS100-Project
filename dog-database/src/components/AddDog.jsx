@@ -27,5 +27,4 @@ function AddDog() {
   );
 }
 
-
 export default AddDog;
