@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import axios from "axios";
+import axios, { post } from "axios";
 import PostTile from "./PostTile";
 import styled from "styled-components";
 import Post from "./Post";
 import instance from "../axios-conn";
-
-const baseURL = "https://jsonplaceholder.typicode.com/posts";
+import { storage, app } from "../firebase";
+import { trackPromise } from "react-promise-tracker";
+import { toast } from "react-toastify";
 
 class DogPost extends Component {
   state = {
@@ -15,6 +16,7 @@ class DogPost extends Component {
     gender: null,
     breed: null,
     description: null,
+    file: null,
     dogTagList: [],
   };
 
@@ -35,6 +37,27 @@ class DogPost extends Component {
       .catch((err) => console.log(err));
   }
 
+  onFormSubmit(event) {
+    event.preventDefault();
+    this.fileUpload(this.state.file).then((response) => {
+      console.log(response.data);
+    });
+  }
+
+  onChange(event) {
+    this.setState({ file: event.target.files[0] });
+  }
+  fileUpload(file) {
+    const formData = new FormData();
+    formData.append("file", file);
+    const config = {
+      headers: {
+        "content-type": "multipart/form-data",
+      },
+    };
+    return post("gs://dog-database-d87bb.appspot.com", formData, config);
+  }
+
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   };
@@ -48,6 +71,7 @@ class DogPost extends Component {
       gender: this.state.gender,
       breed: this.state.breed,
       description: this.state.description,
+      file: this.state.file,
       id: this.state.id,
     };
     console.log(data);
@@ -55,7 +79,7 @@ class DogPost extends Component {
     instance
       .post("/posts.json", data)
       .then((res) => {
-        const fresh_post = res.data.created;
+        const fresh_post = res.data;
         this.state.dogTagList.push(fresh_post);
       })
       .catch((err) => console.log(err));
@@ -65,6 +89,13 @@ class DogPost extends Component {
     return (
       <div>
         <StyledCreatePost>
+          <form onSubmit={this.onFormSubmit}>
+            <label>Image Upload</label>
+            <input type="file" onChange={this.onChange} />
+            <button className="arrow" type="submit">
+              upload
+            </button>
+          </form>
           <form
             className="ui-form"
             autoComplete="off"
@@ -123,6 +154,7 @@ class DogPost extends Component {
                 gender={dog.gender}
                 breed={dog.breed}
                 description={dog.description}
+                file={dog.file}
               />
             ))}
         </StyledPost>

@@ -3,30 +3,48 @@ import React, { Component, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import instance from "../axios-conn";
-
-const baseURL = "https://jsonplaceholder.typicode.com/posts";
+import DogPost from "./DogPost";
+import { storage, app } from "../firebase";
 
 class PostTile extends Component {
   handleRemove = (id) => {
-    instance
-      .delete(`posts/${id}.json`)
-      .then((res) => {
-        console.log(res);
-        console.log(res.data);
-      })
+    instance.delete(`posts/${id}.json`).then((res) => {
+      console.log(res);
+      console.log(res.data);
+    });
 
-      .catch((err) => console.log(err));
+    //     .catch((err) => console.log(err));
   };
 
   render() {
     return (
       <StyledPostTile>
         <h1>{this.props.theName}</h1>
-        <p>{this.props.description}</p>
-        <p>{this.props.age}</p>
-        <p>{this.props.breed}</p>
-        <p>{this.props.gender}</p>
-        <div class="col-lg-5"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 img img-3 d-flex justify-content-center align-items-center">
+              <div class="img-with-text">
+                <img src={this.props.file} width="500" height="500" />
+                <font size="6">
+                  <p>{this.props.breed}</p>
+                  <p>{this.props.gender}</p>
+                  <p>{this.props.age}</p>
+                </font>
+              </div>
+            </div>
+
+            <div class="col-md-7 wrap-about pl-md-5 ">
+              <div class="heading-section">
+                <h2 class="mb-4">Dog</h2>
+              </div>
+              <font size="6">
+                <p>{this.props.description}</p>
+              </font>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">{this.props.file}</div>
 
         <form onSubmit={this.handleRemove}>
           <button className="arrow" type="submit">
@@ -49,7 +67,7 @@ const StyledPostTile = styled.a`
     padding: 5px 5px;
     font-weight: 700;
     font-size: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: #383736;
     border: 2px #383736 solid;
     border-radius: 4px;
