@@ -14,7 +14,7 @@ function AddDog() {
         
 
           <div class="col-lg-12">
-            <h1 class="font-weight-light">AddDog</h1>
+            <h1 class="font-weight-normal">AddDog</h1>
 
             <p>
              Add your dogs here.
