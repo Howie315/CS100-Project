@@ -7,6 +7,7 @@ import instance from "../axios-conn";
 import { storage, app } from "../firebase";
 import { trackPromise } from "react-promise-tracker";
 import { toast } from "react-toastify";
+import * as ImagePicker from "expo-image-picker";
 
 class DogPost extends Component {
   state = {
@@ -87,6 +88,7 @@ class DogPost extends Component {
   };
 
   render() {
+   
     return (
       <div>
         <StyledCreatePost>

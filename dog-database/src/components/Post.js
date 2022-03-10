@@ -1,21 +1,23 @@
 import React, { Component, useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
-
+import * as ImagePicker from "expo-image-picker";
 import instance from "../axios-conn";
 
 const Post = ({ match }) => {
   const [post, setPost] = useState({});
+
   useEffect(() => {
     instance
-      .get(`posts/${match.params.id}.json/`)
+      .get(`posts/${match.params}.json/`)
       .then((res) => {
         setPost(res.data.post);
+
         console.log(res.data);
       })
       .catch((err) => console.log(err));
   }, []);
-
+  
   return (
     <div>
       <StyledPost>
