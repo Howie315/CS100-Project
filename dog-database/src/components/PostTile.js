@@ -68,13 +68,13 @@ const StyledPostTile = styled.a`
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 3px;
-    color: #383736;
-    border: 2px #383736 solid;
+    color: white;
+    border: 2px maroon solid;
     border-radius: 4px;
     text-transform: uppercase;
     outline: 0;
     overflow: hidden;
-    background: none;
+    background: red;
     z-index: 1;
     cursor: pointer;
     transition: 0.08s ease-in;

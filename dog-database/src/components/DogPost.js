@@ -178,8 +178,8 @@ const StyledCreatePost = styled.a`
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 2px;
-    color: #383736;
-    border: 2px #383736 solid;
+    color: white;
+    border: 2px white solid;
     border-radius: 4px;
     text-transform: uppercase;
     outline: 0;
