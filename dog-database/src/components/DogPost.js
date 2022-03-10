@@ -21,9 +21,8 @@ class DogPost extends Component {
   };
 
   componentDidMount() {
-    instance
-      .get("/posts.json")
-      .then((res) => {
+    trackPromise(
+      instance.get("/posts.json").then((res) => {
         console.log(res.data);
         const result = [];
         for (let key in res.data) {
@@ -34,7 +33,9 @@ class DogPost extends Component {
         }
         this.setState({ dogTagList: result });
       })
-      .catch((err) => console.log(err));
+    );
+
+    //.catch((err) => console.log(err));
   }
 
   onFormSubmit(event) {
