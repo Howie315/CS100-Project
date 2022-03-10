@@ -86,7 +86,18 @@
  > * First install Node.js here: https://nodejs.org/en/
  > * Then git pull the files from the master branch.
  > * In terminal, enter the dog database folder with cd ./dog-database/.
+ > * Also in terminal, type the following: 
+ > * npm install
+ > * npm install react-router-dom
+ > * npm install bootstrap
+ > * npm install react-fade-in
+ > * npm install react-loading
+ > * npm install firebase
+ > * npm install react-toastify
+ > * npm install react-promise-tracker
+ > * npm install expo-image-picker
  > * Type "npm start" in terminal to run the program.
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ > * For our project, we tested it using inputs and checking if the outputs match with our inputs. In our case, we would check the inputs for Dog name, age, breed, and description. We would also check if the image matches the one we uploaded. To check our tests, we would look at the dog listings and see if our dog objects correspond to our tests correctly. 
  
