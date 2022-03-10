@@ -5,7 +5,8 @@ import styled from "styled-components";
 import Post from "./Post";
 import instance from "../axios-conn";
 import { storage, app } from "../firebase";
-const db = app.firestore();
+import { trackPromise } from "react-promise-tracker";
+import { toast } from "react-toastify";
 
 class DogPost extends Component {
   state = {
@@ -35,6 +36,7 @@ class DogPost extends Component {
       })
       .catch((err) => console.log(err));
   }
+
   onFormSubmit(event) {
     event.preventDefault();
     this.fileUpload(this.state.file).then((response) => {
@@ -53,10 +55,7 @@ class DogPost extends Component {
         "content-type": "multipart/form-data",
       },
     };
-    return post(
-      "https://console.firebase.google.com/project/dog-database-d87bb/storage/dog-database-d87bb.appspot.com/files",
-      config
-    );
+    return post("gs://dog-database-d87bb.appspot.com", formData, config);
   }
 
   handleChange = (event) => {
@@ -72,15 +71,15 @@ class DogPost extends Component {
       gender: this.state.gender,
       breed: this.state.breed,
       description: this.state.description,
-      id: this.state.id,
       file: this.state.file,
+      id: this.state.id,
     };
     console.log(data);
 
     instance
       .post("/posts.json", data)
       .then((res) => {
-        const fresh_post = res.data.created;
+        const fresh_post = res.data;
         this.state.dogTagList.push(fresh_post);
       })
       .catch((err) => console.log(err));
@@ -90,11 +89,13 @@ class DogPost extends Component {
     return (
       <div>
         <StyledCreatePost>
-          {/* <form onSubmit={this.onFormSubmit}>
+          <form onSubmit={this.onFormSubmit}>
             <label>Image Upload</label>
             <input type="file" onChange={this.onChange} />
-            <button type="submit">Upload</button>
-          </form> */}
+            <button className="arrow" type="submit">
+              upload
+            </button>
+          </form>
           <form
             className="ui-form"
             autoComplete="off"
